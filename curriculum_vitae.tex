@@ -1,0 +1,78 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+% ---------------------------------- Config ------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Packages used only in CV and not in cover letter (draft mode is raised)
+\usepackage{graphicx}   % For images
+\usepackage[export]{adjustbox}
+% Uncomment for figures at the bottom of a page and background image
+%\usepackage{dblfloatfix}
+%\usepackage[firstpage=true]{background}
+
+% Page margins
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Font directories
+\fontdir[fonts/]
+\graphicspath{{./data-fake/img/}}
+
+% Colors for highlight
+% awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange,
+% awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+
+% Set false to not highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% Change social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Switch between \engtrue and \itatrue commands for document language
+\engtrue
+
+% Switch for the date format in the footer
+\eng{\usepackage[english]{babel}}
+\ita{\usepackage[italian]{babel}}
+
+
+% ---------------------------- Personal Information ----------------------------
+\input{data-fake/personal}
+
+
+% ------------------------------- Document -------------------------------------
+\begin{document}
+
+% -------------------------------- Header --------------------------------------
+% Print the header with above personal information
+% Optional argument to change alignment (C: center, L: left, R: right)
+\makecvheader[L]
+
+% -------------------------------- Footer --------------------------------------
+% Has three arguments (<left>, <center>, <right>), leave blank if not needed
+\makecvfooter{\today}{Name Surname~~~·~~~Curriculum Vit\ae}{\thepage}
+
+% -------------------------------- Content -------------------------------------
+\input{data-fake/cv/summary}
+\input{data-fake/cv/experience}
+\input{data-fake/cv/education}
+\input{data-fake/cv/certificates}
+\input{data-fake/cv/skills}
+\input{data-fake/cv/languages}
+\input{data-fake/cv/privacy}
+
+\end{document}

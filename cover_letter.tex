@@ -1,0 +1,74 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+% ---------------------------------- Config ------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Page margins
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Fonts directory
+\fontdir[fonts/]
+
+% Colors for highlight
+% awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange,
+% awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+
+% Set false to not highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% Change social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Switch between \engtrue and \itatrue commands for document language
+\engtrue
+
+% Switch for the date format on top of the letter
+\eng{\usepackage[english]{babel}}
+\ita{\usepackage[italian]{babel}}
+
+
+% ---------------------------- Personal Information ----------------------------
+\input{data-fake/personal}
+
+
+% ----------------------------- Letter Information -----------------------------
+\input{data-fake/cover-letter/information}
+
+
+% ------------------------------- Document -------------------------------------
+\begin{document}
+
+% -------------------------------- Header --------------------------------------
+% Print the header with above personal information
+% Optional argument to change alignment (C: center, L: left, R: right)
+\makecvheader[R]
+
+% -------------------------------- Footer --------------------------------------
+% Has three arguments (<left>, <center>, <right>), leave blank if not needed
+\makecvfooter{}{Name Surname~~~·~~~Cover Letter}{}
+
+% -------------------------------- Content -------------------------------------
+\makelettertitle
+
+\begin{cvletter}
+    \input{data-fake/cover-letter/body}
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}
