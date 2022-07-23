@@ -521,11 +521,11 @@
           %-------------------------------- START CHANGES --------------------------------
           % Additional changes of:
           % mnau23 - github.com/mnau23
-          % Better view of social links in the header for the used ones
+          % Better view of social links in the header
           \\
           %\ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           %--------------------------------- END CHANGES ---------------------------------
-          \href{http://\@homepage}{\faChrome\acvHeaderIconSep\@homepage}%
+          \href{https://\@homepage}{\faChrome\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
