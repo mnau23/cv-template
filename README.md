@@ -1,11 +1,13 @@
-# Curriculum Vitae
-> Code for my latest version of CV and, if needed, cover letter
+# CV Template
+
+> Code for my latest version of CV and, if needed, cover letter.
 
 Built using [Overleaf](https://it.overleaf.com/).<br/>
 Based on the LaTeX template **Awesome-CV**, to which all credit goes.
 
 I have made some changes to customize it more: some options and functions are added/modified<br/>
 in the `awesome-cv.cls` class and are highlighted with my GitHub username.
+
 - Added `\grade` as loading dots
 - Added `\tags` to use in descriptions
 - Added support for both English and Italian language
@@ -24,6 +26,6 @@ Examples of CV and cover letter are presented using non-personal data.
     </a>
 </div>
 
-
 ## License
+
 **[LPPL-1.3c](https://www.linux.it/opensource/licenze/licenses/lppl-1.3c/)** - source & copyright to [Awesome-CV](https://github.com/posquit0/Awesome-CV)
